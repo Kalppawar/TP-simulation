@@ -5,6 +5,9 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
+# custom folder
+pcBuild/
+
 # Visual Studio cache directory
 .vs/
 
