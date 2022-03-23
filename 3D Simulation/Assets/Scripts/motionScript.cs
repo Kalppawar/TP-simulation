@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class motionScript : MonoBehaviour
 {
-    [SerializeField]
-    GameObject player;
-    [SerializeField]
-    CharacterController controller;
+    private GameObject player;
+    private CharacterController controller;
 
     [SerializeField]
     public Transform cam;
@@ -26,6 +24,8 @@ public class motionScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = this.gameObject;
+        controller = GetComponent<CharacterController>();
     }
     private void OnTriggerEnter(Collider other)
     {
